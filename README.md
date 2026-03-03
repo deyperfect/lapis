@@ -35,23 +35,37 @@ A thoughtful, literary blog platform where anyone can write and share stories, e
 ```
 src/
 ├── api/
+│   ├── api.js          # Axios Setup
 │   ├── auth.js         # Auth API calls (login, register, profile)
 │   └── posts.js        # Posts API calls
+│   └── comments.js     # Comments API calls
+├── assets/
+│   └── main.css        # Global CSS
 ├── components/
-│   ├── Usetheme.js     # Theme composable
-│   └── Themetoggle.vue # Dark/light toggle component
+│   ├── Admindasbhoard.vue    # Admin Dashboard component
+│   ├── Createpost.vue        # Create Post component
+│   ├── Home.vue              # Home Page component
+│   ├── Navbar.vue            # Navbar component
+│   ├── Postdetail.vue        # Post Details component
+│   ├── Profile.vue           # Profile component
+│   ├── Register.vue          # Register component
+│   ├── Signin.vue            # Login component
+│   └── Themetoggle.vue       # Dark/light toggle component
+│   ├── Usetheme.js           # Theme composable
+├── router/
+│   └── index.js        # Vue Router config
 ├── stores/
 │   ├── auth.js         # Auth state (Pinia)
 │   └── posts.js        # Posts state (Pinia)
 ├── views/
-│   ├── Home.vue        # Post feed with pagination
-│   ├── Login.vue       # Login page
-│   ├── Register.vue    # Register page
-│   ├── PostDetail.vue  # Single post view
-│   ├── CreatePost.vue  # Create post form
-│   └── AdminDashboard.vue # Admin post management
-├── router/
-│   └── index.js        # Vue Router config
+│   ├── HomePage.vue          # Post feed with pagination
+│   ├── LoginView.vue         # Login page
+│   ├── Register.vue          # Register page
+│   ├── CreatePostView.vue    # Create post page
+│   ├── PostDetailView.vue    # Single post view
+│   ├── CreatePostView.vue    # Create post form
+│   └── AdminDashboard.vue    # Admin post management
+└── App.vue
 └── main.js
 ```
 
