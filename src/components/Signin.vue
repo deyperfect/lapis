@@ -81,7 +81,7 @@ const submit = async () => {
             </button>
           </form>
 
-          <a href="#" class="forgot-link">Forgot password?</a>
+       
 
           <div class="form-footer">
             <span>Don't have an account?</span>
