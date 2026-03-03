@@ -10,7 +10,8 @@ import PostDetailView from "../views/PostDetailView.vue";
 import AdminDashboard from "../views/AdminDashboard.vue";
 
 const routes = [
-  { path: "/", name: "home", component: HomePage },
+  { path: "/", redirect: "/posts" },
+  { path: "/posts", name: "home", component: HomePage },
   { path: "/login", name: "login", component: LoginView },
   { path: "/register", name: "register", component: RegisterView },
   { path: "/create", name: "createPost", component: CreatePostView, meta: { requiresAuth: true } },
