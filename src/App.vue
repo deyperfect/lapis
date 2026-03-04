@@ -1,6 +1,6 @@
 <script setup>
 import { useAuthStore } from './stores/auth'
-import { useTheme } from './components/Usetheme'
+import { useTheme } from './composables/Usetheme.js'
 import { onMounted } from "vue";
 
 import Navbar from "./components/Navbar.vue";

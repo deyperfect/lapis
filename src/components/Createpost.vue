@@ -2,7 +2,7 @@
 import { ref, onMounted, watch } from "vue";
 import { usePostsStore } from "../stores/posts";
 import { useRouter } from "vue-router";
-import { useTheme } from "../components/Usetheme";
+import { useTheme } from "../composables/Usetheme.js";
 
 const posts = usePostsStore();
 const router = useRouter();

@@ -1,7 +1,7 @@
 <script setup>
 import { ref, computed, onMounted, watch } from "vue";
 import { useRoute, useRouter } from "vue-router";
-import { useTheme } from "../components/Usetheme";
+import { useTheme } from "../composables/Usetheme.js";
 import { useAuthStore } from "../stores/auth";
 import api from "../api/api"; // <-- your axios instance with baseURL + token interceptor
 

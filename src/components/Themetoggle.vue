@@ -1,3 +1,9 @@
+<script setup>
+import { useTheme } from '../composables/Usetheme.js'
+
+const { theme, toggleTheme } = useTheme()
+</script>
+
 <template>
   <button class="theme-toggle" @click="toggleTheme" :title="'Switch to ' + (theme === 'dark' ? 'light' : 'dark') + ' mode'">
     <!-- Sun icon -->
@@ -19,11 +25,6 @@
   </button>
 </template>
 
-<script setup>
-import { useTheme } from './Usetheme'
-
-const { theme, toggleTheme } = useTheme()
-</script>
 
 <style>
 .theme-toggle {

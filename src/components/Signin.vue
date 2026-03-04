@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 import { useAuthStore } from "../stores/auth";
 import { useRouter } from "vue-router";
-import { useTheme } from './Usetheme'
+import { useTheme } from '../composables/Usetheme.js'
 import ThemeToggle from './Themetoggle.vue'
 
 const auth = useAuthStore();

@@ -3,7 +3,7 @@ import { computed, onMounted } from 'vue'
 import { useAuthStore } from '../stores/auth'
 import { usePostsStore } from '../stores/posts'
 import { useRouter } from 'vue-router'
-import { useTheme } from '../components/Usetheme'
+import { useTheme } from '../composables/Usetheme.js'
 
 const auth = useAuthStore()
 const posts = usePostsStore()

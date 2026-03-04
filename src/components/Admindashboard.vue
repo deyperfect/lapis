@@ -3,7 +3,7 @@ import { ref, computed, onMounted } from "vue";
 import { useRouter } from "vue-router";
 import { useAuthStore } from "../stores/auth";
 import { usePostsStore } from "../stores/posts";
-import { useTheme } from "./Usetheme";
+import { useTheme } from "../composables/Usetheme.js";
 
 const router = useRouter();
 const auth = useAuthStore();
